@@ -1,48 +1,47 @@
 {
-	"name": "deprecations",
-	"version": "1.0.5",
-	"author": "Jordan Harband",
-	"description": "Given an npm module name, get a map of npm version numbers to deprecation messages.",
-	"license": "MIT",
-	"main": "index.js",
-	"scripts": {
-		"test": "npm run lint && node test/index.js && npm run security",
-		"coverage": "covert test/*.js",
-		"coverage-quiet": "covert test/*.js --quiet",
-		"lint": "npm run jscs && npm run eslint",
-		"eslint": "eslint *.js test/*.js",
-		"jscs": "jscs *.js test/*.js",
-		"security": "nsp package"
-	},
-	"preferGlobal": true,
-	"bin": {
-		"deprecations": "bin.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/ljharb/npm-deprecations.git"
-	},
-	"keywords": [
-		"deprecations",
-		"npm",
-		"deprecated",
-		"deprecation messages"
-	],
-	"dependencies": {
-		"npm": "3.3.x",
-		"object.assign": "^4.0.1",
-		"promiseback": "^2.0.1"
-	},
-	"devDependencies": {
-		"tape": "^4.2.0",
-		"covert": "^1.1.0",
-		"jscs": "^2.1.1",
-		"eslint": "^1.4.3",
-		"@ljharb/eslint-config": "^1.2.0",
-		"nsp": "^1.1.0"
-	},
-	"engines": {
-		"node": ">= 0.4"
-	}
+  "name": "deprecations",
+  "version": "1.0.5",
+  "author": "Jordan Harband",
+  "description": "Given an npm module name, get a map of npm version numbers to deprecation messages.",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && node test/index.js && npm run security",
+    "coverage": "covert test/*.js",
+    "coverage-quiet": "covert test/*.js --quiet",
+    "lint": "npm run jscs && npm run eslint",
+    "eslint": "eslint *.js test/*.js",
+    "jscs": "jscs *.js test/*.js",
+    "security": "nsp package"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "deprecations": "bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ljharb/npm-deprecations.git"
+  },
+  "keywords": [
+    "deprecations",
+    "npm",
+    "deprecated",
+    "deprecation messages"
+  ],
+  "dependencies": {
+    "npm": "npm/npm#d901d13",
+    "object.assign": "^4.0.1",
+    "promiseback": "^2.0.1"
+  },
+  "devDependencies": {
+    "tape": "^4.2.0",
+    "covert": "^1.1.0",
+    "jscs": "^2.1.1",
+    "eslint": "^1.4.3",
+    "@ljharb/eslint-config": "^1.2.0",
+    "nsp": "^1.1.0"
+  },
+  "engines": {
+    "node": ">= 0.4"
+  }
 }
-
